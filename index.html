@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda dança com videoaulas, aulas ao vivo e agendamento.">
+  <title>MoveDance — Curso de Dança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="#inicio">MOVE<span>DANCE</span></a>
+    <button class="menu" id="menuBtn">☰</button>
+    <nav id="nav">
+      <a href="#curso">O curso</a>
+      <a href="#aulas">Aulas</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-small" href="#matricula">Quero me matricular</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">CURSO ONLINE DE DANÇA</span>
+      <h1>Dance no seu ritmo.<br><span>Aprenda de verdade.</span></h1>
+      <p>Videoaulas passo a passo, exercícios práticos, calendário de aulas ao vivo e avisos para você nunca perder uma aula.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#matricula">Começar agora</a>
+        <a class="btn btn-outline" href="#aulas">Ver como funciona</a>
+      </div>
+      <div class="stats">
+        <div><strong>+20</strong><small>videoaulas</small></div>
+        <div><strong>Ao vivo</strong><small>aulas especiais</small></div>
+        <div><strong>24h</strong><small>acesso online</small></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="play">▶</div>
+      <div class="hero-card-bottom">
+        <span>AULA DEMONSTRAÇÃO</span>
+        <strong>Aprenda seu primeiro passo</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="curso" class="section">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">O CURSO</span>
+      <h2>Uma experiência completa para você evoluir</h2>
+      <p>Estude quando quiser e participe dos encontros ao vivo para tirar dúvidas e praticar.</p>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon">🎬</div><h3>Videoaulas</h3><p>Aulas organizadas por módulos, com explicações simples e exercícios para praticar.</p></article>
+      <article class="card"><div class="icon">📅</div><h3>Agendamento</h3><p>Escolha seu horário para aulas ao vivo e acompanhe tudo pela sua área do aluno.</p></article>
+      <article class="card"><div class="icon">🔔</div><h3>Notificações</h3><p>Receba avisos no navegador sobre aulas ao vivo e novos conteúdos.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="aulas" class="section dark">
+  <div class="container">
+    <div class="section-title light">
+      <span class="eyebrow">CONTEÚDO</span>
+      <h2>Veja o que você vai aprender</h2>
+    </div>
+    <div class="lessons">
+      <article class="lesson">
+        <div class="lesson-number">01</div>
+        <div><h3>Fundamentos da dança</h3><p>Postura, ritmo, coordenação e primeiros movimentos.</p></div>
+        <button class="preview" data-video="Aula 01 — Fundamentos">▶ Prévia</button>
+      </article>
+      <article class="lesson">
+        <div class="lesson-number">02</div>
+        <div><h3>Passos básicos</h3><p>Aprenda sequências simples e monte sua primeira coreografia.</p></div>
+        <button class="preview" data-video="Aula 02 — Passos básicos">▶ Prévia</button>
+      </article>
+      <article class="lesson">
+        <div class="lesson-number">03</div>
+        <div><h3>Coreografia</h3><p>Junte os movimentos e desenvolva musicalidade e expressão.</p></div>
+        <button class="preview" data-video="Aula 03 — Coreografia">▶ Prévia</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="agenda" class="section">
+  <div class="container agenda-grid">
+    <div>
+      <span class="eyebrow">AULAS AO VIVO</span>
+      <h2>Reserve seu horário</h2>
+      <p>Escolha uma data disponível. O site guarda seu agendamento neste dispositivo e permite ativar notificações.</p>
+      <button class="btn" id="notifyBtn">🔔 Ativar notificações</button>
+      <p id="notifyStatus" class="status"></p>
+    </div>
+    <div class="schedule">
+      <h3>Próximos horários</h3>
+      <div id="slots"></div>
+    </div>
+  </div>
+</section>
+
+<section id="matricula" class="section pricing">
+  <div class="container pricing-box">
+    <div>
+      <span class="eyebrow">MATRÍCULA</span>
+      <h2>Entre para o MoveDance</h2>
+      <p>Acesso ao conteúdo do curso + calendário de aulas ao vivo.</p>
+      <ul>
+        <li>✓ Videoaulas organizadas</li>
+        <li>✓ Aulas ao vivo</li>
+        <li>✓ Agendamento online</li>
+        <li>✓ Avisos de novas aulas</li>
+      </ul>
+    </div>
+    <div class="price-card">
+      <span>PLANO COMPLETO</span>
+      <strong>R$ 97</strong>
+      <small>pagamento único</small>
+      <button class="btn" id="buyBtn">Quero me matricular</button>
+      <small>O botão está preparado para receber seu link de pagamento.</small>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" class="section faq">
+  <div class="container">
+    <div class="section-title"><span class="eyebrow">DÚVIDAS</span><h2>Perguntas frequentes</h2></div>
+    <details><summary>Preciso ter experiência?</summary><p>Não. O curso foi estruturado para começar pelos fundamentos e evoluir gradualmente.</p></details>
+    <details><summary>Posso assistir pelo celular?</summary><p>Sim. O layout é responsivo e funciona em celular, tablet e computador.</p></details>
+    <details><summary>Como funcionam as aulas ao vivo?</summary><p>Você escolhe um horário disponível no calendário. Depois, poderá receber avisos antes da aula.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <strong class="logo">MOVE<span>DANCE</span></strong>
+    <p>© 2026 MoveDance. Todos os direitos reservados.</p>
+    <a href="#" id="whatsapp">Fale conosco</a>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="closeModal">×</button>
+    <div class="modal-play">▶</div>
+    <h3 id="modalTitle">Prévia da aula</h3>
+    <p>Substitua este espaço pelo vídeo real da sua aula (YouTube não listado, Vimeo ou hospedagem própria).</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
